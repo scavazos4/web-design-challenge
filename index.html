@@ -2,52 +2,60 @@
 <html lang="en-us">
 
 <head>
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <title>Web Visualization Dashboard (Latitude)</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
-<body>
-    <header>
-      <div class="container">
-        <div id="navigation">
-          <h1>Web Visualization Dashboard</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Visuals.html">Visuals</a></li>
-            <li><a href="Comparisons.html">Comparisons</a></li>
-            <li><a href="Data.html">Data</a></li>
-          </ul>
-        </nav>
+<header>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Web Visualization Dashboard</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="visuals.html" id="navbardropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visuals
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
       </div>
-    </header>
-    <section id="showcase">
-      <div class = "container">
-        <h1>Latitude vs X</h1>
-        <p>Landing descriptive text area</p>
-      </div>
-    </section>
-    <section id="bottom">
-      <div class = "container">
-        <div class = "box">
-          <h3><a href="visuals.html">Visuals</a></h3>
-        </div>
-        <div class = "box">
-          <h3><a href="Comparisons.html">Comparisons</a></h3>
-        </div>
-        <div class = "box">
-          <h3><a href="Data.html">Data</a></h3>
-        </div>
-      </div>
-    </section>
+    </nav>
+    </div>
+</header>
 
+
+<body>
+  <figure class="container">
+    <blockquote class="blockquote">
+      <p>Summary: Latitude vs. X</p>
+    </blockquote>
+    <figcaption>
+      <p>The purpose of this project was to analyze how weather changes as you get closer to teh equator. To accompish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset over 500 cities.</p>
+      <p>After assembling hte dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+      <img src="Instructions/Resources/assets/images/Fig1.png" class="float-center">
+    </figcaption>
+  </figure>
     <footer>
       <p>Made by Shawn Cavazos</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
