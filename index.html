@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <title>Web Visualization Dashboard (Latitude)</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  
 </head>
 
 <header>
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">Web Visualization Dashboard</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -45,19 +45,49 @@
 
 
 <body>
-  <figure class="container">
-    <blockquote class="blockquote">
-      <p>Summary: Latitude vs. X</p>
-    </blockquote>
-    <figcaption>
-      <p>The purpose of this project was to analyze how weather changes as you get closer to teh equator. To accompish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset over 500 cities.</p>
-      <p>After assembling hte dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-      <img src="Instructions/Resources/assets/images/Fig1.png" class="float-center">
-    </figcaption>
-  </figure>
-    <footer>
-      <p>Made by Shawn Cavazos</p>
-    </footer>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Summary: Latitude vs X</h1>
+        <p class="lead text-muted"><p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accompish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset over 500 cities.</p>
+        <p>After assembling hte dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+      </div>
+    </div>
+  </section>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="instructions/Resources/assets/images/fig1.png">
+            <text><a href="temp.html">City Latitude vs Max Temperature (01/05/17)</a></text>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="instructions/Resources/assets/images/fig2.png">
+            <text><a href="humid.html">City Latitude vs Humidity (01/05/17)</a></text>
+            </div>
+            </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="instructions/Resources/assets/images/fig3.png">
+            <text><a href="cloud.html">City Latitude vs Cloudiness (01/05/17)</a></text>
+            </div>
+        </div>   
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="instructions/Resources/assets/images/fig4.png">
+            <text><a href="wind.html">City Latitude vs Wind Speed (01/05/17)</a></text>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
